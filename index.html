@@ -333,10 +333,10 @@
   .offer-card h3{ font-size:15.5px; margin-bottom:8px; transform:translateZ(14px); }
   .offer-card p{ color:var(--ink-soft); font-size:13px; line-height:1.5; transform:translateZ(8px); }
 
-  .mission-bar{ display:flex; align-items:center; gap:18px; background:linear-gradient(120deg,var(--gold-300),var(--gold-500)); border-radius:16px; padding:26px 32px; }
-  .mission-bar svg{ width:34px; height:34px; flex-shrink:0; }
-  .mission-bar p{ color:var(--navy-950); font-size:17px; font-family:'Fraunces',serif; font-weight:500; }
-  .mission-bar em{ font-style:italic; }
+  .mission-bar{ display:flex; align-items:center; gap:18px; background:linear-gradient(120deg,var(--navy-900),var(--navy-700)); border-radius:16px; padding:26px 32px; border:1px solid rgba(233,210,154,.22); box-shadow:0 20px 38px -30px rgba(6,15,31,.55); }
+  .mission-bar svg{ width:34px; height:34px; flex-shrink:0; color:var(--gold-300); }
+  .mission-bar p{ color:var(--paper); font-size:17px; font-family:'Fraunces',serif; font-weight:500; }
+  .mission-bar em{ color:var(--gold-300); font-style:italic; }
 
   /* ---------- HOW WE WORK (Lead Generation) ---------- */
   .leadgen-intro{ max-width:70ch; margin:0 auto 56px; text-align:center; color:var(--ink-soft); font-size:16.5px; line-height:1.75; }
@@ -501,7 +501,7 @@
   /* ---------- BLOG ---------- */
 
   /* ---------- CONTACT ---------- */
-  .contact-grid{ display:grid; grid-template-columns:1fr .8fr; gap:56px; }
+  .contact-grid{ display:grid; grid-template-columns:1fr .8fr; gap:56px; align-items:start; }
   .field{ margin-bottom:18px; }
   .field label{ display:block; font-size:13px; font-weight:700; color:var(--ink-soft); margin-bottom:7px; }
   .field input, .field textarea{
@@ -512,12 +512,12 @@
   .submit-btn:hover{ background:var(--gold-500); border-color:var(--gold-500); color:var(--navy-950); }
   .confirm-msg{ color:var(--gold-600); font-size:13.5px; font-weight:700; margin-top:12px; display:none; }
   .error-msg{ color:#c0392b; font-size:13.5px; font-weight:700; margin-top:12px; display:none; }
-  .office-card{ background:var(--navy-950); color:var(--paper); border-radius:18px; padding:30px; }
-  .office-card h3{ color:var(--paper); font-size:19px; margin-bottom:16px; }
-  .office-line{ display:flex; gap:12px; padding:12px 0; border-top:1px solid var(--line-dark); font-size:14px; color:rgba(246,241,230,.78); }
+  .office-card{ background:var(--navy-950); color:var(--paper); border-radius:18px; padding:22px 24px 18px; width:100%; max-width:420px; justify-self:end; min-height:0; }
+  .office-card h3{ color:var(--paper); font-size:19px; margin:0 0 12px; }
+  .office-line{ display:flex; gap:12px; padding:10px 0; border-top:1px solid var(--line-dark); font-size:14px; color:rgba(246,241,230,.78); }
   .office-line:first-of-type{ border-top:none; }
   .office-line svg{ width:17px; height:17px; flex-shrink:0; margin-top:1px; color:var(--gold-300); }
-  .map-graphic{ margin-top:20px; border-radius:12px; overflow:hidden; border:1px solid var(--line-dark); }
+  .map-graphic{ margin-top:20px; border-radius:12px; overflow:hidden; border:1px solid var(--line-dark); display:none; }
 
   footer.site{ background:var(--navy-950); color:rgba(246,241,230,.6); padding:72px 0 0; }
   .footer-top{
@@ -822,7 +822,6 @@
         </div>
 
         <div class="leadgen-goal">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.6-3 8.4-7 10-4-1.6-7-5.4-7-10V6z" stroke="#0a1c37" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="#0a1c37" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           <div>
             <h3>Our Goal</h3>
             <p>Our goal is simple: reduce the time realtors spend chasing unqualified leads and help them spend more time speaking with people who have genuine real estate needs.</p>
@@ -860,7 +859,7 @@
     <section class="section-tight">
       <div class="wrap">
         <div class="mission-bar">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v5c0 4.6-3 8.4-7 10-4-1.6-7-5.4-7-10V6z" stroke="#0a1c37" stroke-width="1.6"/><path d="M9 12l2 2 4-4" stroke="#0a1c37" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        
           <p>Our mission is simple: deliver better leads, build stronger partnerships, and create <em>real results.</em></p>
         </div>
       </div>
@@ -946,15 +945,6 @@
           <div class="office-line"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg><span>Main HQ &mdash; Italy</span></div>
           <div class="office-line"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.2 7-11.5A7 7 0 105 9.5C5 14.8 12 21 12 21z" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="9.5" r="2.4" stroke="currentColor" stroke-width="1.6"/></svg><span>Offshore Office &mdash; United Arab Emirates</span></div>
           <div class="office-line"><svg viewBox="0 0 24 24" fill="none"><path d="M4 5h4l2 5-2.5 1.5a11 11 0 005 5L14 14l5 2v4a2 2 0 01-2 2C9.5 22 2 14.5 2 7a2 2 0 012-2z" stroke="currentColor" stroke-width="1.6"/></svg><span>(860) 699-6337</span></div>
-          <div class="office-line"><svg viewBox="0 0
-            <svg viewBox="0 0 300 130" width="100%" height="120">
-              <rect width="300" height="130" fill="#0f2a4f"/>
-              <path d="M0 90 L60 70 L120 95 L180 60 L240 85 L300 65" stroke="#e9d29a" stroke-width="1" opacity=".35" fill="none"/>
-              <path d="M0 40 L80 55 L150 30 L220 50 L300 35" stroke="#e9d29a" stroke-width="1" opacity=".25" fill="none"/>
-              <circle cx="150" cy="60" r="6" fill="#c9a24b"/>
-              <path d="M150 60 L150 40" stroke="#c9a24b" stroke-width="2"/>
-            </svg>
-          </div>
         </div>
       </div>
     </section>
